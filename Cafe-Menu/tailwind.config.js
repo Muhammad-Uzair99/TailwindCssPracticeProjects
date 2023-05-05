@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'beans':"url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg')",
+      }
+    },
   },
   plugins: [],
 }
