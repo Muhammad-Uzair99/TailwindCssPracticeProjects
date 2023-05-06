@@ -10,6 +10,6 @@
 
 @layer utilities {
   .item {
-    @apply inline-block my-2 w-6/12 px-4 text-lg font-medium;
+    @apply inline-block my-2 w-6/12 px-4 my-1 text-lg font-medium;
   }
 }
