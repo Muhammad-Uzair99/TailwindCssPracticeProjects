@@ -543,6 +543,11 @@ h2 {
   margin-right: auto;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .h-1 {
   height: 0.25rem;
 }
@@ -616,6 +621,10 @@ h2 {
   font-style: italic;
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .opacity-90 {
   opacity: 0.9;
 }
@@ -629,4 +638,29 @@ h2 {
   padding-right: 1rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.visited\:text-black:visited {
+  color: rgb(0 0 0 );
+}
+
+.hover\:text-orange-800:hover {
+  --tw-text-opacity: 1;
+  color: rgb(154 52 18 / var(--tw-text-opacity));
+}
+
+.hover\:text-orange-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(124 45 18 / var(--tw-text-opacity));
+}
+
+.active\:text-orange-800:active {
+  --tw-text-opacity: 1;
+  color: rgb(154 52 18 / var(--tw-text-opacity));
+}
+
+.active\:text-orange-900:active {
+  --tw-text-opacity: 1;
+  color: rgb(124 45 18 / var(--tw-text-opacity));
 }
