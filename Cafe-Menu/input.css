@@ -6,4 +6,10 @@
     h2 {
       @apply text-3xl text-center font-bold font-['Impact'];
     }
+}
+
+@layer utilities {
+  .item {
+    @apply inline-block my-2 w-6/12 px-4 text-lg;
   }
+}
