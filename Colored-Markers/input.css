@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .marker {
+      @apply w-52 h-7 my-3 mx-auto;
+    }
+    .sleeve {
+        @apply w-28 h-7 bg-white/50 border-l-8 border-black border-double inline-block;
+    }
+    .cap {
+        @apply w-16 h-7 inline-block;
+    }
+  }
