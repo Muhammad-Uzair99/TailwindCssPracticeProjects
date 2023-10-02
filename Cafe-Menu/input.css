@@ -3,13 +3,53 @@
 @tailwind utilities;
 
 @layer base {
-    h2 {
-      @apply text-3xl text-center font-bold font-['Impact'];
+    body {
+        @apply box-content bg-[url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg')] font-sans p-[20px] text-center;
+    }
+
+    h1 {
+        @apply text-[40px] font-[impact] font-bold;
+    }
+
+    h2{
+        @apply text-[30px] font-[impact] font-bold;
+    }
+
+    img {
+        @apply block mx-auto mt-[-5px];
+    }
+
+    hr {
+        @apply h-[4px] bg-[brown] border-[brown] my-[16px];
+    }
+
+    footer {
+        @apply text-[14px];
+    }
+
+    a {
+        @apply text-black visited:text-black hover:text-[brown] active:text-[brown];
     }
 }
 
-@layer utilities {
-  .item {
-    @apply inline-block my-2 w-6/12 px-4 my-1 text-lg font-medium;
-  }
+@layer components {
+    .established {
+        @apply italic mt-[8px] mb-[16px];
+    }
+
+    .menu {
+        @apply w-4/5 bg-[burlywood] mx-auto max-w-[500px] p-[20px];
+    }
+
+    .item p {
+        @apply inline-block my-[5px] text-[18px] font-medium;
+    }
+
+    .flavor, .dessert {
+        @apply text-left w-3/4;
+    }
+
+    .price {
+        @apply text-right w-1/4;
+    }
 }

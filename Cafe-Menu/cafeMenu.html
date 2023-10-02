@@ -1,72 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body class="bg-beans font-sans p-5">
-        <div class="bg-orange-200 bg-opacity-90 w-4/5 mx-auto py-5 max-w-xl">
-
-            <main>
-              <h1 class="text-4xl text-center font-extrabold font-['Impact'] m-1">CAMPER CAFE</h1>
-              <p class="text-center italic m-3">Est. 2020</p>
-      
-              <hr class="h-1 bg-orange-800 border-orange-800 m-3">
-      
-              <section>
-                <h2>Coffee</h2>
-
-                <img class="mx-auto my-1 opacity-90" src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
-
-                <article>
-                  <p class="item ">French Vanilla</p><p class="item text-right">3.00</p>
-                </article>
-                <article>
-                  <p class="item">Caramel Macchiato</p><p class="item text-right">3.75</p>
-                </article>
-                <article>
-                  <p class="item">Pumpkin Spice</p><p class="item text-right">3.50</p>
-                </article>
-                <article>
-                  <p class="item">Hazelnut</p><p class="item text-right">4.00</p>
-                </article>
-                <article>
-                  <p class="item">Mocha</p><p class="item text-right">4.50</p>
-                </article>
-              </section>
-      
-              <section>
-                <h2>Desserts</h2>
-
-                <img class="mx-auto my-1 opacity-90" src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
-
-                <article>
-                  <p class="item">Donut</p><p class="item text-right">1.50</p>
-                </article>
-                <article>
-                  <p class="item">Cherry Pie</p><p class="item text-right">2.75</p>
-                </article>
-                <article>
-                  <p class="item">Cheesecake</p><p class="item text-right">3.00</p>
-                </article>
-                <article>
-                  <p class="item">Cinnamon Roll</p><p class="item text-right">2.50</p>
-                </article>
-              </section>
-            </main>
-      
-            <hr class="h-1 bg-orange-800 border-orange-800 m-3">
-      
-            <footer class="text-center">
-              <p class="text-sm my-2">
-                <a class="underline hover:text-orange-900 active:text-orange-900 visited:text-black" href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
-              </p>
-              <p>123 Free Code Camp Drive</p>
-            </footer>
-            
-          </div>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="output.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p class="established">Est. 2020</p>
+        <hr>
+        <section>
+          <h2>Coffee</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
+          <article class="item">
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+        </section>
+        <section>
+          <h2>Desserts</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
+          <article class="item">
+            <p class="dessert">Donut</p><p class="price">1.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+          </article>
+        </section>
+      </main>
+      <hr class="bottom-line">
+      <footer>
+        <p>
+          <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
+        </p>
+        <p class="address">123 Free Code Camp Drive</p>
+      </footer>
+    </div>
+  </body>
 </html>
