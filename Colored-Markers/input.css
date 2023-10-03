@@ -2,14 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
+@layer base {
+    body {
+        @apply box-content;
+    }
+
+    h1 {
+        @apply text-center font-serif text-3xl my-3 font-bold;
+    }
+}
+
+@layer components {
+    .container {
+        @apply bg-white px-0 py-[10px] mx-auto;
+    }
+
     .marker {
-      @apply w-52 h-7 my-3 mx-auto;
+        @apply w-[200px] h-[25px] mx-auto my-[10px];
     }
-    .sleeve {
-        @apply w-28 h-7 bg-white/50 border-l-8 border-black border-double inline-block;
-    }
+
     .cap {
-        @apply w-16 h-7 inline-block;
+        @apply w-[60px] h-[25px] inline-block;
     }
-  }
+
+    .sleeve {
+        @apply w-[110px] h-[25px] inline-block bg-[#ffffff80] border-l-[10px] border-double border-[#000000bf];
+    }
+
+    .red {
+        @apply bg-gradient-to-t from-[#7a4a0e] via-[#f53e71] to-[#a21b1b] shadow-[0_0_20px_0_rgba(83,14,14,0.8)];
+    }
+
+    .green {
+        @apply bg-gradient-to-t from-[#55680D] via-[#71F53E] to-[#116C31] shadow-[0_0_20px_0_#3B7E20CC];
+    }
+
+    .blue {
+        @apply bg-gradient-to-t from-[#0A4248] via-[#3D71F5] to-[#2F2FA7] shadow-[0_0_20px_0_hsla(223,59%,31%,0.8)];
+    }
+}
