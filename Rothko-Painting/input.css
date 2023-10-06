@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .canvas {
+    @apply w-[500px] h-[600px] bg-[#4d0f00] blur-[2px] overflow-hidden;
+  }
+
+  .frame {
+    @apply box-content border-[50px] border-solid border-black w-[500px] p-[50px] my-[20px] mx-auto;
+  }
+
+  .one {
+    @apply w-[425px] h-[150px] bg-[#efb762] my-[20px] mx-auto shadow-[0_0_3px_3px_#efb762] rounded-[9px] rotate-[-0.6deg] blur-[1px];
+  }
+
+  .two {
+    @apply w-[425px] h-[200px] bg-[#8f0401] mb-[20px] mx-auto shadow-[0_0_3px_3px_#8f0401] rounded-tl-[8px] rounded-br-[8px] rounded-tr-[10px] rounded-bl-[10px] rotate-[0.4deg]  blur-[1px];
+  }
+
+  .three {
+    @apply w-[91%] h-[28%] bg-[#b20403] m-auto shadow-[0_0_5px_5px_#b20403] rounded-tl-[30px] rounded-br-[60px] rounded-tr-[25px] rounded-bl-[12px] rotate-[-0.2deg];
+  }
+}
