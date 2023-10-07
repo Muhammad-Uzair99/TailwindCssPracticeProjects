@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply box-border m-0 font-serif bg-[#f5f6f7];
+  }
+}
+
+@layer components {
+  .header {
+    @apply text-center uppercase p-[32px] bg-[#0a0a23] text-white border-b-[4px] border-[#fdb347] font-bold text-[2rem];
+  }
+
+  .gallery {
+    @apply flex flex-row flex-wrap justify-center items-center gap-[16px] max-w-[1400px] my-0 mx-auto py-[20px] px-[10px] after:inline-block after:w-[350px];
+  }
+
+  .gallery img {
+    @apply w-full max-w-[350px] h-[300px] object-cover rounded-[10px];
+  }
+
+}
