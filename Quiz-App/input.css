@@ -1,3 +1,120 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply motion-safe:scroll-smooth;
+  }
+
+  body {
+    @apply bg-[#f5f6f7] text-[#1b1b32] font-[Helvetica] m-0;
+  }
+
+  header {
+    @apply w-full h-[50px] bg-[#1b1b32] flex justify-between items-center fixed top-0;
+  }
+
+  h1 {
+    @apply text-[#f1be32] text-lg text-center font-extrabold;
+  }
+
+  nav {
+    @apply w-[50%] max-w-[300px] h-[50px];
+  }
+
+  nav > ul {
+    @apply flex justify-evenly flex-wrap items-center ps-0 m-0 h-full;
+  }
+
+  nav > ul > li {
+    @apply text-[#dfdfe2] my-0 mx-[0.2rem] p-[0.2rem] block hover:bg-[#dfdfe2] hover:text-[#1b1b32] hover:cursor-pointer;
+  }
+
+  li > a {
+    @apply text-inherit no-underline;
+  }
+
+  main {
+    @apply pt-[50px];
+  }
+
+  section {
+    @apply w-full mt-0 mx-auto mb-[10px] max-w-[600px];
+  }
+
+  h1, h2 {
+    @apply font-[Verdana];
+  }
+
+  h2 {
+    @apply text-[1.5em] font-extrabold border-b-[4px] border-solid border-[#dfdfe2] m-[0.83em] mt-[0px] pt-[60px];
+  }
+
+  input {
+    @apply text-base;
+  }
+
+  p {
+    @apply mt-[5px] pl-[15px] text-[20px] before:content-['Question_#'];
+  }
+
+  button {
+    @apply block my-[40px] mx-auto w-2/5 p-[15px] text-[23px] bg-[#d0d0d5] border-[3px] border-solid border-[#3b3b4f];
+  }
+
+  footer {
+    @apply bg-[#2a2a40] flex justify-center;
+  }
+
+  footer, footer a {
+    @apply text-[#dfdfe2];
+  }
+
+  address {
+    @apply text-center p-[0.3em];
+  }
+}
+
+
+@layer components {
+  #logo {
+    @apply max-w-[18vw] min-w-[100px] h-full bg-[#0a0a23] aspect-[35/4] p-[0.4rem];
+  }
+
+  .info {
+    @apply pt-[10px] pr-0 pb-0 pl-[5px];
+  }
+
+  .formrow {
+    @apply mt-[30px] py-0 px-[15px];
+  }
+
+  .info label, .info input {
+    @apply inline-block;
+  }
+
+  .info input {
+    @apply w-1/2 text-left;
+  }
+
+  .info label {
+    @apply w-[10%] min-w-[55px] text-right;
+  }
+
+  .question-block {
+    @apply text-left block w-full mt-[20px] pt-[5px];
+  }
+
+  .question {
+    @apply border-none pb-0 my-[4px] mx-[12px];
+  }
+
+  .answer-list {
+    @apply list-none p-0;
+  }
+
+  .sr-only {
+    @apply absolute w-[1px] h-[1px] p-0 -m-[1px] overflow-hidden whitespace-nowrap border-0;
+  }
+}
